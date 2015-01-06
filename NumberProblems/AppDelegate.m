@@ -18,8 +18,6 @@ static int multiple = 8;
 static int divisor = 6;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
     iterateCount(4);
     
     return YES;
@@ -28,12 +26,12 @@ static int divisor = 6;
 void iterateCount (int i){
     if (i > 0) {
     NSLog(@"Iterate %d",i);
-    int oneFewer = --i;
+    int oneFewer = i--;
     iterateCount(oneFewer);
-        multiplied(4);
-        NSLog(@"Multiplied [%d] by [%d] to be [%d]",integer,multiplie,multipied);
+        multiplied(i);
+        NSLog(@"Multiplied [%d] by [%d] to be [%d]", i, multiple, newX);
         divided(newX);
-        NSLog(@"Divided [%d] by [%d] to be [%f]",multiplied,divisor,divided);
+        NSLog(@"Divided [%d] by [%d] to be [%f]", newX, divisor, newY);
     }
 }
 int multiplied (int x){
